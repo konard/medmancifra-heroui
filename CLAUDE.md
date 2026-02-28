@@ -813,3 +813,16 @@ When working with HeroUI CSS components, follow these critical patterns:
 - **spinner.css**: Base has `size-6`, empty `.spinner--md` variant
 
 These patterns ensure components never appear broken and maintain consistency across the design system.
+
+---
+
+Issue to solve: https://github.com/medmancifra/heroui/issues/1
+Your prepared branch: issue-1-1166ee3be561
+Your prepared working directory: /tmp/gh-issue-solver-1772287504198
+Your forked repository: konard/medmancifra-heroui
+Original repository (upstream): medmancifra/heroui
+
+Proceed.
+
+
+Run timestamp: 2026-02-28T14:05:13.059Z
