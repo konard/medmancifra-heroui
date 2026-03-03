@@ -15,3 +15,16 @@ HeroUI v3 is a modern React UI library built with Tailwind CSS v4, using a pnpm 
 - **TypeScript**: v5.8.3
 - **Turborepo**: Build orchestration
 - **Storybook**: Component development
+
+---
+
+Issue to solve: https://github.com/medmancifra/heroui/issues/5
+Your prepared branch: issue-5-18aab0c6c232
+Your prepared working directory: /tmp/gh-issue-solver-1772577798135
+Your forked repository: konard/medmancifra-heroui
+Original repository (upstream): medmancifra/heroui
+
+Proceed.
+
+
+Run timestamp: 2026-03-03T22:43:25.157Z
