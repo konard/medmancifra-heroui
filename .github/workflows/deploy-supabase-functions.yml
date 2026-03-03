@@ -1,0 +1,53 @@
+name: Deploy Supabase Edge Functions (Deno)
+
+# Deploys all Edge Functions in supabase/functions/ to Supabase via the CLI.
+# Requires the following repository secrets:
+#   SUPABASE_ACCESS_TOKEN   – personal access token from https://app.supabase.com/account/tokens
+#   SUPABASE_PROJECT_ID     – project reference id (Settings > General)
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "supabase/functions/**"
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    name: Deploy Edge Functions
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Install Supabase CLI
+        uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Deploy wells function
+        run: supabase functions deploy wells --project-ref "${{ secrets.SUPABASE_PROJECT_ID }}"
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+
+      - name: Deploy repairs function
+        run: supabase functions deploy repairs --project-ref "${{ secrets.SUPABASE_PROJECT_ID }}"
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+
+      - name: Deploy fields function
+        run: supabase functions deploy fields --project-ref "${{ secrets.SUPABASE_PROJECT_ID }}"
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+
+      - name: Deploy repair-types function
+        run: supabase functions deploy repair-types --project-ref "${{ secrets.SUPABASE_PROJECT_ID }}"
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
