@@ -44,6 +44,7 @@ const config: StorybookConfig = {
     "./stories/colors.stories.tsx",
     "./stories/colors-demo.stories.tsx",
     "./stories/demo.stories.tsx",
+    "./stories/demo-well-repairs.stories.tsx",
     ...getStories(),
   ],
 };
