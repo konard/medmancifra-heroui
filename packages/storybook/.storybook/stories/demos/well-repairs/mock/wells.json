@@ -1,0 +1,10 @@
+[
+  {"id": "w-1", "fieldId": "field-1", "cluster": "К-101", "wellNumber": "1001"},
+  {"id": "w-2", "fieldId": "field-1", "cluster": "К-101", "wellNumber": "1002"},
+  {"id": "w-3", "fieldId": "field-1", "cluster": "К-102", "wellNumber": "1003"},
+  {"id": "w-4", "fieldId": "field-2", "cluster": "К-201", "wellNumber": "2001"},
+  {"id": "w-5", "fieldId": "field-2", "cluster": "К-201", "wellNumber": "2002"},
+  {"id": "w-6", "fieldId": "field-3", "cluster": "К-301", "wellNumber": "3001"},
+  {"id": "w-7", "fieldId": "field-4", "cluster": "К-401", "wellNumber": "4001"},
+  {"id": "w-8", "fieldId": "field-5", "cluster": "К-501", "wellNumber": "5001"}
+]
