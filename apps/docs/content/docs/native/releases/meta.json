@@ -1,0 +1,18 @@
+{
+  "title": "Releases",
+  "description": "HeroUI Native Release Notes",
+  "icon": "rocket",
+  "root": true,
+  "pages": [
+    "---Overview---",
+    "index",
+    "---Releases---",
+    "rc-3",
+    "rc-2",
+    "rc-1",
+    "beta-13",
+    "beta-12",
+    "beta-11",
+    "beta-10"
+  ]
+}
